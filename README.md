@@ -54,17 +54,17 @@ Para organizar y administrar los datos en el grupo usamos Git y GitHub
 
 ### Creadores
 
-Sara 
+Sara María Rubiales Leite
 
-Fernando 
+Fernando Portales Peña
 
-Dario
+Dario Acevedo Hijano
 
-Lucia
+Lucia Antonella Poggi Doga
 
-Nuria
+Nuria Aybar Romero
 
-Jazmin
+Jazmin Alvarenga
 
 
 
