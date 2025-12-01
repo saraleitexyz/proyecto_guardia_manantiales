@@ -8,28 +8,45 @@
 ### Descripción
 
 **Linguardia** es una aplicación tanto para ios como mac, diseñada para los profesores, en dicha aplicación se podrá tener un seguimiento de las guardias del centro educativo, tanto de las guardias de clases como las guardias de las zona del recreo
-  
+
+<div align="center">
+  <img src="app-prototypes/login-page-sign-up.png" alt="Inicio" width="200">
+</div>
+
+### Registrarse
+Para entrar a la aplicación de linguardia es obligatorio registrarse en ella con un corre en espeficico, dicho correo debera de ser registrado y colocado en la bd por direcctivos superiores como jefatura o los propios administradores, si no esta en la bd o se escribe mal saldra un error.
+Tendras dos opciones dependiendo si la persona ya esta registrado o debe iniciar sesion.
+
+<div align="center">
+  <img src="app-prototypes/login-page-sign-up.png" width="200">
+  <img src="app-prototypes/login-page-log-in.png" width="200">
+  <img src="app-prototypes/login-page-log-in-error.png" width="200">
+</div>
 
 ### Notificaciones
-Los profesores que tengas una guardia le llegara una notificación al inicio del dia, igual forma si hay algún cambio en mitad de hora de clase también le llegará una notificación, esta notificación será de la aplicación, 
+Los profesores que tengas una guardia le llegara una notificación al inicio del dia, igual forma si hay algún cambio en mitad de hora de clase también le llegará una notificación, esta notificación será de la aplicación, tambien en notificaciones pueden llegar mensajes de secretaria o entre profesores.
 
-*Foto de como se vería la notificación*
+<div align="center">
+  <img src="app-prototypes/notifications-page.png" alt="Calendario" width="200">
+</div>
 
 ### Interfaz
 En la aplicación se podrá ver el horario tanto diario como semanal de las clases que requieren guardias, como el profesor que debe acudir a esta misma
 
-*Foto diseño horarios*
+<div align="center">
+  <img src="app-prototypes/calendar-view.png" alt="Calendario" width="200">
+</div>
 
-### Asignar Ausencia
-También tendrá un opción para que el maestro pueda notificar de su ausencia, teniendo las opciones del tiempo, horas(de clase) , días, semanas, o meses,  también deberá de notificar el porqué de la falta,
 
-*Foto diseño notificación de ausencias*
+### Perfil
+Cada usuario puede entrar a configuracion de su perfil, donde podra ver datos de su perfil, configurar la pagina o cerrar sesión.
+
+<div align="center">
+  <img src="app-prototypes/user-page.png" alt="Calendario" width="200">
+</div>
 
 ### IA
 La aplicación incluye un servicio de ayuda con IA en la parte inferior derecha, esa ia tendra el nombre de “nombre”
-
-*Foto apariencia de la ia*
-
 
 ### Usuarios
 
