@@ -1,0 +1,9 @@
+Font:
+https://fonts.google.com/specimen/Inria+Sans
+Colors:
+FFFFFF
+B4DEE4
+EDEDED
+55B3C2
+FCE5FF
+D9D9D9
