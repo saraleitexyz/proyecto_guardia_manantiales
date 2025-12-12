@@ -46,6 +46,7 @@ Cada usuario puede entrar a configuracion de su perfil: dónde podra ver datos d
 La aplicación tiene una landing page dónde se resuelven dudas frecuentes y, dentro de esta, también se incluye un servicio de ayuda con IA en la parte inferior derecha para aquellos que necesiten una asistencia técnica más extensa. En todo caso, siempre se dispone de personal humano en el email y correo electrónico.
 
 <div align="center">
+  <img src="01_concept_designs/management-web/landing-page.png" alt="Calendario" width="600">
   <img src="01_concept_designs/management-web/bot.png" alt="Calendario" width="600">
 </div>
 
@@ -58,17 +59,17 @@ Linguardia tiene tres tipos de usuarios:
   * **Profesores:** Son la mayoría de los usuarios, los cuales solo pueden ver las guardias disponibles y añadir si van a faltar para que se modifique la guardia.
 
 
-### Técnico (TO UPDATE)
+### Técnico
 
 La arquitectura que se usa es de cliente-servidor, donde el cliente es el usuario que use la aplicación y el servidor un Docker con Apache.
 
 Usaremos Docker para crear un servidor web con Apache. Este servidor actuará como el cerebro de nuestra app, gestionando la información y las peticiones que le envíe el móvil.
 
-La base de datos usada para guardar los datos de los maestro como de las  guardias es MySQL
+La base de datos usada para guardar los datos de los maestros como de las guardias es MySQL.
 
-En la parte de programación vamos a usar principalmente PHP y Python
+En la parte de programación vamos a usar principalmente PHP y Kotlin.
 
-Para organizar y administrar los datos en el grupo usamos Git y GitHub
+Para organizar y administrar los datos en el grupo usamos Git y GitHub.
 
 ### Creadores
 
