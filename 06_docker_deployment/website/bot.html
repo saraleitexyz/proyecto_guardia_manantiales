@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylebot.css">
+    <title>Bot</title>
+    
+</head>
+<body>
+    <div class="chat-container">
+        <!-- Header del Chat -->
+        <div class="chat-header">
+            <button class="back-btn" onclick="goBack()">←</button>
+            <div class="chat-avatar">🤖</div>
+            <div class="chat-info">
+                <h2>Bot Linguardia</h2>
+                <p>En línea</p>
+            </div>
+        </div>
+
+        <!-- Opciones rápidas -->
+        <div class="quick-options">
+            <div class="quick-option" onclick="selectOption(this)">Guardias</div>
+            <div class="quick-option" onclick="selectOption(this)">Bajas</div>
+            <div class="quick-option" onclick="selectOption(this)">Ayuda</div>
+            <div class="quick-option" onclick="selectOption(this)">Contacto</div>
+            <div class="quick-option" onclick="selectOption(this)">Inscripción</div>
+        </div>
+
+        <!-- Área de mensajes -->
+        <div class="chat-messages" id="chatMessages">
+            <!-- Mensajes aparecerán aquí -->
+        </div>
+
+        <!-- Indicador de escritura -->
+        <div class="typing-indicator" id="typingIndicator">
+            <div class="typing-dots">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        </div>
+
+        <!-- Área de entrada -->
+        <div class="chat-input">
+            <input type="text" class="message-input" id="messageInput" placeholder="Escribe un mensaje..." onkeypress="handleKeyPress(event)">
+            <button class="send-btn" onclick="sendMessage()">
+                <i>➤</i>
+            </button>
+        </div>
+    </div>
+    <script src="./scriptbot.js"></script>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linguardia - Gestión de guardias</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" >
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-img"><img src="./img/Linguardia_app_icon.png" alt="Linguardia app icon"></div>
+            </div>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#preguntas" class="nav-link">Preguntas Frecuentes (FAQ)</a></li>
+                    <li><a href="#info" class="nav-link">Información y contacto</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-icons">
+                <div class="icon"><a href="http://localhost:8081" target="_blank" rel="noopener">👤</a>
+</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero"  id="inicio">
+        <div class="container">
+            <h1 class="hero-title">Bienvenido a Linguardia</h1>
+            <p class="hero-subtitle">Tu software de confianza para la gestión de guardias y profesorado</p>
+            <a href="#" class="btn">Descubre nuestros servicios</a>
+        </div>
+    </section>
+
+    <!-- Sección de Profesores -->
+    <section class="section">
+        <div class="container" id="servicios">
+            <h2 class="section-title" style="color: white;">Nuestros Servicios</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-img"><img src="./img/william-hook-9e9PD9blAto-unsplash.jpg" alt="" width="300px"></div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Aplicación para el profesorado con calendario y notificaciones</h3>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-img"><img src="./img/zulfugar-karimov-PmVlOIClaVo-unsplash.jpg" alt="" height="200px" width="293px"></div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Portal para la gestión de cuentas y guardias del profesorado</h3>
+                        <p class="teacher-subject"></p>
+                    </div>
+                </div>
+                
+                <div class="teacher-card">
+                    <div class="teacher-img"><img src="./img/boliviainteligente-U9e6ySWMW_0-unsplash.jpg" alt="" height="200px" width="293px"></div>
+                    <div class="teacher-info">
+                        <h3 class="teacher-name">Chatbot de IA para la resolución de dudas de forma rápida</h3>
+                        <p class="teacher-subject"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Institución -->
+    <section class="section institution">
+        <div class="container" id="preguntas">
+            <h2 class="section-title">Preguntas frecuentes</h2>
+            <div class="institution-content">
+                <div class="institution-img">¿Cómo puedo instalar Linguardia en mis dispositivos?<br />¿Cómo se usa la aplicación?<br/>¿Cuál es mi usuario y contraseña de administración?<br/>¿Puedo conectar Linguardia a una base de datos de profesores existente?</div>
+                <div class="institution-text">
+                    <h3 class="institution-title">Proyecto grupal nacido de una necesidad real</h3>
+                    <p class="institution-description">En Linguardia nos especializamos en el software de administracion de guardias. Este proyecto nació de un trabajo en clase dónde llegamos a desarrollar mucho más que una aplicación. Nuestro personal es nuestra herramienta más importante.</p>
+                    <a href="#" class="btn">Conoce a nuestro equipo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container" id="info">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">
+                       
+                        <div class="logo-text">Linguardia</div>
+                    </div>
+                    <p style="margin-top: 15px; color: #bdc3c7;">Tu app de confianza.</p>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">f</a>
+                        <a href="#" class="social-icon">t</a>
+                        <a href="#" class="social-icon">in</a>
+                        <a href="#" class="social-icon">ig</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">                    
+                    <div>
+                        <h3 class="footer-title">Información</h3>
+                        <ul class="footer-list">
+                            <li><a href="#" class="footer-link">Sobre nosotros</a></li>
+                            <li><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+                            <li><a href="#" class="footer-link">Política de privacidad</a></li>
+                            <li><a href="#" class="footer-link">Términos y condiciones</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="footer-title">Contacto</h3>
+                        <ul class="footer-list">
+                            <li class="footer-link">Calle Falsa, 123</li>
+                            <li class="footer-link">28001 Madrid</li>
+                            <li class="footer-link">info@linguardia.com</li>
+                            <li class="footer-link">+34 912 345 678</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Linguardia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de Chatbot -->
+    
+     <div class="chatbot-container">
+        <div class="chatbot-message" id="chatbotMessage">
+            <a href="./bot.html" class="close-message" onclick="hideMessage()">x</a></a>
+            <p class="message-text">¡Hola! Soy el Bot de Linguardia 🤖<br>Si necesitas cualquier ayuda, estoy aquí.</p>
+        </div>
+        <div class="chatbot-btn" onclick="irABot()">
+            🤖
+        </div>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

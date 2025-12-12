@@ -1,0 +1,53 @@
+services:
+  web:
+    image: php:8.2-apache
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+    networks:
+      - linguardia_net
+    restart: unless-stopped
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: linguardia
+      MYSQL_USER: sara
+      MYSQL_PASSWORD: sarapass
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./db-init:/docker-entrypoint-initdb.d:ro
+    networks:
+      - linguardia_net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.1.1
+    environment:
+      PMA_HOST: db
+      # PMA_USER and PMA_PASSWORD removed so phpMyAdmin shows the login screen.
+    ports:
+      - "8081:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - linguardia_net
+
+volumes:
+  db_data:
+
+networks:
+  linguardia_net:
+    driver: bridge
