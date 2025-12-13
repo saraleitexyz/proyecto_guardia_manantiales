@@ -20,7 +20,7 @@ services:
       MYSQL_PASSWORD: sarapass
     volumes:
       - db_data:/var/lib/mysql
-      - ./db-init:/docker-entrypoint-initdb.d:ro
+      - ./db-init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
     networks:
       - linguardia_net
     restart: unless-stopped
