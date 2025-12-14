@@ -19,8 +19,9 @@ services:
       MYSQL_USER: sara
       MYSQL_PASSWORD: sarapass
     volumes:
+      # Monta la carpeta db-init local para inicializar el esquema de la DB
       - db_data:/var/lib/mysql
-      - ./db-init/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - ./db-init:/docker-entrypoint-initdb.d:ro 
     networks:
       - linguardia_net
     restart: unless-stopped
@@ -35,7 +36,6 @@ services:
     image: phpmyadmin/phpmyadmin:5.1.1
     environment:
       PMA_HOST: db
-      # PMA_USER and PMA_PASSWORD removed so phpMyAdmin shows the login screen.
     ports:
       - "8081:80"
     depends_on:
@@ -44,6 +44,23 @@ services:
     restart: unless-stopped
     networks:
       - linguardia_net
+      
+  ktor-app:
+    # Contexto de construcción: busca el Dockerfile dentro de la carpeta 'ktor-app'
+    build: ./ktor-app 
+    ports:
+      - "8082:8080" 
+    depends_on:
+      - db
+    environment:
+      DB_HOST: db
+      DB_PORT: 3306 
+      DB_NAME: linguardia
+      DB_USER: sara
+      DB_PASSWORD: sarapass
+    networks:
+      - linguardia_net
+    restart: unless-stopped
 
 volumes:
   db_data:
