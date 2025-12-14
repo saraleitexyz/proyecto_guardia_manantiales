@@ -1,0 +1,96 @@
+body{
+    background-color: #B4DEE4;
+    margin: 0;
+    padding-top: 60px
+}
+
+section{
+    background-color: white;
+    padding: 2em;
+    margin: 3em;
+    width: 20em;
+    margin: auto;
+    border-radius: 20px;
+    padding-top: 1em;
+    font-family: Arial;
+}
+
+.preglogin{
+    border: 1px solid rgb(190, 190, 190);
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+#login{
+    background-color: white;
+    font-weight: bold;
+    padding-left: 0.2em;
+    margin-left: 1.5em;
+    margin-top: -1.4em;
+    position: absolute;
+    height: 2.3em;
+    width: auto;
+}
+
+
+.input{
+    border: transparent;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+}
+
+
+button{
+    width: 100%;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    border-radius: 10px;
+    border: #55B3C2;
+    background-color: #55B3C2;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 1.3em;
+}
+
+#condiciones{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.condi{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.condibot{
+    width: 17px;
+    height: 17px;
+    accent-color: #55B3C2;
+}
+
+.linea{
+    border-top: 1px solid rgb(190, 190, 190);
+    width: 100%;
+    margin-top: 2em;
+}
+
+.yatiene{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.olividar{
+    text-align: right;
+    font-weight: bold;
+    font-size: 15px;
+}

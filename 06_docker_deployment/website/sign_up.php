@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="sign_up.css">
+    <link rel="icon" href="imagenes\Linguardia_app_icon.png">
+    <title>Linguardia</title>
+</head>
+<body>
+
+
+
+    <section>
+
+        <div class="titulo">
+            <p>Crea una cuenta</p>
+        </div>
+
+        <form method="POST" action="Jefatura.php">
+            <div id="login">
+                <p>Nombre completo:</p>
+            </div>
+            <div class="preglogin">
+                <input class="input" type="text" name="name" required>
+            </div>
+
+            <div id="login">
+                <p>Email:</p>
+            </div>
+            <div class="preglogin">
+                <input class="input" type="email" name="email" required>
+            </div>
+
+            <div id="login">
+                <p>Contraseña:</p>
+            </div>
+            <div class="preglogin">
+                <input class="input" type="password" name="password" required>
+            </div>
+
+            <div id="condiciones">
+                <p class="condi"><input  class="condibot" type="checkbox" required> Estoy de acuerdo con los <span style="color:#78bcc7">términos y condiciones de uso. </span> </p>  
+            </div>
+            
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <div>
+            <div class="linea"></div>
+        </div>
+
+        <div>
+            <p class="yatiene">¿Ya tienes cuenta? <a href="loginf.php" style="color:#78bcc7">Inicia sesión</a> </p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    
+    
+
+
+</body>
+</html>

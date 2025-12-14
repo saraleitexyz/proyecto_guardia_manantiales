@@ -1,0 +1,89 @@
+nav {
+    position: fixed;
+    padding-left: 1em;
+    padding-right: 1.2em;
+    top: 0;
+    left: 0;
+    width: calc(100% - 0px);
+    background-color: #B4DEE4;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.persona{
+    width: 5em;
+    height: 7em;
+
+}
+
+.contenido{
+    display: flex; /* Convierte el contenedor en un Flex Container */
+    gap: 20px; /* Añade un espacio entre los dos elementos */
+    width: auto; /* Limita el ancho total del diseño */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 1em;
+}
+
+section{  
+    background-color: #B4DEE4;
+    flex: 3; /* Esto le dice a Flexbox que use 4 parte del espacio disponible */
+    padding: 15px;
+    border-radius: 20px;
+}
+
+article{
+    background-color: #B4DEE4;
+    padding: 15px;
+    flex: 1;
+    padding: 15px;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.boton{
+    width: 100%;
+    padding: 1em;
+    background-color: #e2eff0;
+    border: #98c0c4 solid 0.2em;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
+
+.boton:hover{
+    background-color: #a6e4e8;
+}
+
+.botonfin{
+    width: 100%;
+    padding: 1em;
+    background-color: #e2eff0;
+    border: #98c0c4 solid 0.2em;
+    border-radius: 20px;
+}
+.navega {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    width: 100%; 
+    margin: 0 auto; /* Centra el div.navega en la página si lo deseas */
+    padding: 10px;
+}
+
+/* Opcional: Asegúrate de que no haya margen extra en el párrafo */
+.navega p {
+    margin: 0;
+}
+
+
+img{
+    width: 2em;
+    height: 2em;
+    text-align: right;
+}
