@@ -73,7 +73,7 @@ Para organizar y administrar los datos en el grupo usamos Git y GitHub.
 
 ### Creadores
 
-Sara 
+Sara no seas mala
 
 Fernando 
 
